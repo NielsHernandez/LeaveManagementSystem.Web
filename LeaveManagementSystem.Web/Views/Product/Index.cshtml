@@ -1,0 +1,19 @@
+﻿
+@model Product
+@{ViewData["Title"] = "Product";}
+
+
+@{
+
+    for(int i=0; i<10; i++)
+    {
+      <p>@i</p>
+    }
+
+}
+
+<h1>Products</h1>
+<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Quantity</li>
+</ul>
